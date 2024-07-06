@@ -1,0 +1,120 @@
+Software Modules
+- User Management
+- Job Postings
+- Document Management
+- Online Exams
+- Communication
+- Customer Support
+- Public Endpoints (No Authentication Required)
+- Subscription Plans
+- Subscription
+- Authenticated Endpoints (Require Authentication)
+- User Subscription
+- Billing and Invoices
+- Unique Token
+- Payment Integration
+
+API Endpoints
+Public Endpoints (No Authentication Required)
+Subscription Plans
+
+plaintext
+
+GET /api/plans - List all available subscription plans
+GET /api/plans/{id} - Get details of a specific plan
+
+Subscription
+
+plaintext
+
+POST /api/subscribe - Subscribe to a plan
+
+Authenticated Endpoints (Require Authentication)
+User Management
+
+plaintext
+
+GET /api/user - Get authenticated user details
+PUT /api/user - Update authenticated user details
+
+Job Postings
+
+plaintext
+
+GET /api/jobs - List all job postings
+GET /api/jobs/{id} - Get a specific job posting
+POST /api/jobs - Create a new job posting
+PUT /api/jobs/{id} - Update a job posting
+DELETE /api/jobs/{id} - Delete a job posting
+
+Document Management
+
+plaintext
+
+GET /api/documents - List all documents
+GET /api/documents/{id} - Get a specific document
+POST /api/documents - Upload a new document
+PUT /api/documents/{id} - Update document details
+DELETE /api/documents/{id} - Delete a document
+
+Online Exams
+
+plaintext
+
+GET /api/exams - List all exams
+GET /api/exams/{id} - Get a specific exam
+POST /api/exams - Create a new exam
+PUT /api/exams/{id} - Update an exam
+DELETE /api/exams/{id} - Delete an exam
+GET /api/exams/{id}/questions - List all questions for an exam
+POST /api/exams/{id}/questions - Add a question to an exam
+DELETE /api/exams/{id}/questions/{questionId} - Delete a question from an exam
+
+Communication
+
+plaintext
+
+GET /api/notices - List all notices
+GET /api/notices/{id} - Get a specific notice
+POST /api/notices - Create a new notice
+PUT /api/notices/{id} - Update a notice
+DELETE /api/notices/{id} - Delete a notice
+
+Customer Support
+
+plaintext
+
+GET /api/tickets - List all tickets
+GET /api/tickets/{id} - Get a specific ticket
+POST /api/tickets - Create a new ticket
+PUT /api/tickets/{id} - Update a ticket
+DELETE /api/tickets/{id} - Delete a ticket
+
+User Subscription
+
+plaintext
+
+GET /api/subscription - Get current subscription details
+PUT /api/subscription - Update subscription plan
+DELETE /api/subscription - Cancel subscription
+
+Billing and Invoices
+
+plaintext
+
+GET /api/invoices - List all invoices
+GET /api/invoices/{id} - Get details of a specific invoice
+
+Unique Token
+
+plaintext
+
+GET /api/token - Get the unique token for the authenticated user
+
+Payment Integration
+
+plaintext
+
+POST /api/payment/request - Initiate a payment request
+POST /api/payment/response - Handle payment response from gateway
+POST /api/payment/webhook - Handle webhooks from payment gateway
